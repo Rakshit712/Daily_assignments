@@ -1,0 +1,11 @@
+.my_heading {
+    color:blue;
+    color:aqua;
+    font-weight: bold;
+    font-size: 100px;
+}
+div{
+    border:2px solid black;
+    margin:10px;
+    padding:20px;
+}

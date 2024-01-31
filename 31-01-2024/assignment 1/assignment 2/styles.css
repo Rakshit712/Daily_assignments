@@ -1,0 +1,30 @@
+#h1{
+    color: red;font-size: 24px;
+    background-color: red;
+}
+#p1{
+    background-color: yellow;
+    padding: 10px;
+
+}
+#div1{
+    border: 1px solid black;
+
+}
+.h2{
+    color: blue;
+}
+.lii{
+    font-weight: bold;
+}
+.lio{
+    font-weight: italic;
+
+}
+#p{
+    text-align: center;
+}
+#div2{
+    border: 1px solid black;
+    background: red;
+}

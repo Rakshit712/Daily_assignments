@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header{
+    
+    background-color: aqua;
+    width: 500px;
+    text-align: center;
+    
+    
+}
+.four-box{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    
+    gap: 5px
+    ;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 200px;
+    gap: 10px;
+    
+
+}
+.second{  
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    gap: 10px;
+    
+
+}
+.hero{
+    color: aliceblue;
+    background-color: rgb(169, 147, 190);
+    text-align: center;
+    height: 200px;
+}
+
+.sidebar{
+    background-color: rgb(101, 209, 101);
+    text-align: center;
+    height: 300px;
+}
+.main-control{
+    background-color: rgb(239, 171, 46);
+    height: 350px;
+    text-align: center;
+} 
+.extra-control{
+    background-color: grey;
+    height: 150px;
+    text-align: center;
+}
+.twoo{
+    display: flex;
+    gap: 5px;
+
+}
+.related-images{
+    background-color: rgb(44, 115, 44);
+    width:350px;
+    text-align: center;
+}
+.related{
+    background-color: palevioletred;
+    width: 148px;
+    text-align: center;
+
+}
+.footer{
+    background-color: orange;
+    text-align: center;
+}

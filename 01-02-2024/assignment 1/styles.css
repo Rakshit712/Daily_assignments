@@ -1,0 +1,56 @@
+.main{
+    background-color: aqua;
+    
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-self: center;
+    
+
+}
+#h1{
+    text-align: center;
+}
+.child{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    display: flex;
+    gap: 10px;
+    width: 70px;
+    margin: 10px;
+
+
+}
+.child:nth-child(1),.child:nth-child(5){
+    padding: 10px;
+    justify-content: center;
+}
+.child:nth-child(2){
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+.child:nth-child(3){
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.child:nth-child(4){
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    align-self:flex-end;
+}
+
+    
+
+
+

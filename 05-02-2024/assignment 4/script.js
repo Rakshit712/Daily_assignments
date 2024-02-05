@@ -1,0 +1,10 @@
+alert("this is a Simple Intrest Calculator");
+let num1 = prompt("Enter the principal amount ");
+let num2 = prompt("Enter the rate of intrest per annum ");
+let num3 = prompt("Enter the time period in years");
+num1 = parseFloat(num1);
+num2 = parseFloat(num2);
+num3 = parseFloat(num3);
+let SI;
+SI = (num1*num2*num3)/100;
+alert("The Intrest calculated is :"+SI);

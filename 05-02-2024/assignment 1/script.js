@@ -1,0 +1,13 @@
+alert("This ia an interactive calculator. You need to enter two numbers on which the operation will be performed");
+let num1 = prompt("Enter the first number");
+let num2 = prompt("Enter the second number");
+num1 = parseFloat(num1);
+num2 = parseFloat(num2);
+let sum = num1+num2;
+let diff = num1-num2;
+let mull = num1*num2;
+let div = num1/num2;
+alert("The sum of two number is: " +sum);
+alert("The difference of two number is: " +diff);
+alert("The multiply of two number is: " +mull);
+alert("The division of two number is: " +div);

@@ -89,7 +89,7 @@ function bookList(){
     }
 }
 function borrowReturnBook(bookId) {
-    const bookIndex = Library.findIndex(book => book.id === bookId);
+    const bookIndex = Library.findIndex(book => book.id === bookId);                   //.findIndex executes a function and return the index
      const currentStatus = Library[bookIndex].isborrowed;
     const newStatus = !currentStatus;
     let Library = getStorage();

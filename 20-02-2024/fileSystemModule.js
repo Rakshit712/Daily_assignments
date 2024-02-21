@@ -26,8 +26,15 @@ function readFrom(path) {
 // function to create directory....
 
 function createDirectory(name) {
-    fs.mkdir(name, () => {
+    fs.mkdir(name, () => { },(err) =>{
+        if (err){
+            console.log("Error occoured");}
 
+        else{
+            console.log("directory created");
+        }
+
+        
     })
 
 }
@@ -37,10 +44,12 @@ function createDirectory(name) {
 
 function listFiles(directory_name) {
     fs.readdir(directory_name, (err, files) => {
+        if(!err){
         files.forEach(file => {
             console.log(file);
 
-        })
+        })}
+        else{console.log('Unable to scan directory: ' + err);} 
     })
 }
 

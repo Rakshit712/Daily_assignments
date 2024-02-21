@@ -1,6 +1,5 @@
 
 
-const { type } = require("os");
 const {writeInto,readFrom,createDirectory,listFiles,} = require("./fileSystemModule");
 
 

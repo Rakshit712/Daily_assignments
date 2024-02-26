@@ -71,25 +71,25 @@ router.patch("/:id", (req, res) => {
         return res.status(400).json("Invalid ID")
     }
     const task = tasks[index];
-    if (update.completed !== undefined) {task.completed = update.completed};
-    writeTasks( tasks);
+    if (update.completed !== undefined) { task.completed = update.completed };
+    writeTasks(tasks);
     res.json(task);
 });
 
 
 // to
 
-router.put('/:id',(req,res) => {
-    const id=parseInt(req.params.id);
+router.put('/:id', (req, res) => {
+    const id = parseInt(req.params.id);
     const update = req.body;
     const tasks = getTasks();
-    const  task = tasks.find((task)=> task.id===id);
-    if(!task){return res.status(400).json('The user is not found')}
-    for(const changes in update) {
-       task[changes] = update [changes]
-   }
-   writeTasks(tasks);
-   res.send(task)
+    const task = tasks.find((task) => task.id === id);
+    if (!task) { return res.status(400).json('The user is not found') }
+    for (const changes in update) {
+        task[changes] = update[changes]
+    }
+    writeTasks(tasks);
+    res.send(task)
 
 })
 

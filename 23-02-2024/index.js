@@ -6,6 +6,7 @@ const {writeData,getData} = require('./crude.js');
 
 
 const app =  express();
+app.use(express.json());
 
 const port = 8000;
 
@@ -39,27 +40,34 @@ app.post(' /users ', (req, res) => {
     users.push({
         ...newUser, id: users.length + 1
     })
-    writeData(data);
+    writeData(users);
     return res.json(newUser);
 });
 
-app.patch(' /users/:id', (req, res) => {
-    const id = Number(req.params.id);
+app.patch('/users/:id', (req, res) => {
+    const id = parseInt(req.params.id);
     const users = getData();
     const body = req.body;
-    const user = users.find((user) => user.id == id);
+    console.log(req.body);
+    const index = users.findIndex((user) => user.id === id);
+    const user=users[index];
+    console.log(user);
+    if (body.id !== undefined) { user.id = body.id; }
     if (user === undefined) { return res.status(400).json("The User is not found") }
-    if (body.name !== undefined) { user.name = body.name };
+    if (body.first_name !== undefined) { user.first_name = body.first_name };
+    if (body.last_name !== undefined) { user.last_name = body.last_name };
+    // if (isNaN(body.age)) { return res.status(400).json(`Invalid age`) } else { user.age = body.age };
     if (body.email !== undefined) { user.email = body.email; }
-    if (isNaN(body.age)) { return res.status(400).json(`Invalid age`) } else { user.age = body.age };
-    writeData(user);
+    if (body.gender !== undefined) { user.gender = body.gender; }
+    users[index]=user;
+    writeData(users);
     return res.json(user);
 });
 
 app.delete('/users/:id', (req, res) => {
-    const id = Number(req.params.id);
+    const id = parseInt(req.params.id);
     const users = getData();
-    const index = users.findIndex((user) => { user.id == id });
+    const index = users.findIndex((user) => { user.id === id });
     if (index < 0) {
         return res.status(400).json("ID Not Found");
     }

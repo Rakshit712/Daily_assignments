@@ -3,12 +3,12 @@ const fs = require('fs');
 
 
 const getData =()=>{
-    const data = fs.readFile('.MOCK_DATA.json', 'utf8');
+    const data = fs.readFileSync('./MOCK_DATA.json', 'utf-8');
     return JSON.parse(data); 
 }
 
 const writeData = (data)=>{
-    fs.writeFile('MOCK_DATA.json',JSON.stringify(data));
+    fs.writeFileSync('MOCK_DATA.json',JSON.stringify(data));
 }
 
 

@@ -9,9 +9,9 @@ const app =  express();
 
 const port = 8000;
 
-const users = require('./MOCK_DATA.json');
 
 app.get('/users', (req, res) => {
+    const users= getData();
     return res.json(users);
 });
 
@@ -19,7 +19,7 @@ app.get('/users/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const users = getData();
     console.log(users);
-    const user = users.filter((user) => user.id === id);
+    const user = users.find((user) => user.id === id);
     if (!user) {
         return res.status(404).json('Not  Found');
     } else {

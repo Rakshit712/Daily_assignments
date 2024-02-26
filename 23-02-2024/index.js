@@ -67,13 +67,13 @@ app.patch('/users/:id', (req, res) => {
 app.delete('/users/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const users = getData();
-    const index = users.findIndex((user) => { user.id === id });
+    const index = users.findIndex((user) =>  user.id === id );
     if (index < 0) {
         return res.status(400).json("ID Not Found");
     }
     users.splice(index, 1);
-    writeData(user);
-    res.json(users);
+    writeData(users);
+    res.json("user deleted");
 
 });
 

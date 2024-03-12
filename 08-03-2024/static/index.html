@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <nav id="head">
+            <h1>Library Management System</h1>
+        </nav>
+        <section id="addBook">
+            <h3>Add New Books</h3>
+
+            <label for="Book Title">Book Tittle : </label>
+            <input class="inpt" id="title" name="Book Title" type="text"  placeholder="Book Title"><br>
+            
+            <label for="Book Author">Book Author : </label>
+            <input class="inpt" id="author" name="Book Author" type="text"  placeholder="Book Author"><br>
+            
+            <div id="addButton">
+                <button id="add" type="submit"> Add Book</button>
+
+            </div>                                        
+
+        </section>
+
+
+        <section  id="bookList">
+            <h3>Available Books </h3>
+            <table id ="table">
+                <thead>
+                    <tr >
+                        <th>Book Id</th>
+                        <th>Book Title</th>
+                        <th>Book Author</th>
+                        <th>available</th>
+                        <th>Borrow/Return</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+ 
+            </table>
+            <div id="avBook">
+                <button id="listBooks" type="submit">Book List</button>
+                
+            </div>
+            
+            
+        </section>
+        <section id ="deletebook">
+            <h3>Delete a book: </h3>
+            <p>Enter the title of the book you want to delete: </p>
+            <input type="text" id="delTitle" placeholder="Book Title">
+            <button id="delete" type="submit">Delete book</button>
+        
+        </section>    
+        </section>
+        <section id="SearchBook">
+            <h3>Search Book</h3>
+            <label for="Book Title">Book Tittle : </label>
+            <input class="inpt" id="searchTitle" name="Book Title" type="text"  placeholder="Book Title">
+            <button id="search" type="submit">Search</button>
+            <div id="display">
+                
+            </div>
+            
+            
+        </section>
+    </div>    
+</body>
+</html>

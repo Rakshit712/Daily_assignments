@@ -10,7 +10,16 @@ function Todo(){
     
     return(
 
-    <div className="users">{JSON.stringify(data)}</div>
+<>
+       
+       <h2>Todo</h2>
+        <div className="TodoList">
+        {data.map(data => (
+          <li key={data.id}>{"Title : "}{data.title}</li>
+        ))}
+        </div>
+    </>
+
     )
 }
 export default Todo ;

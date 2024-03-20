@@ -9,9 +9,14 @@ function Post(){
     },[])
     
     return(
-    
+    <>
        
-    <div className="users">{JSON.stringify(data)}</div>
-    )
+       <h2>Posts</h2>
+        <div className="PostList">
+        {data.map(data => (
+          <li key={data.id}>{"Title : "}{data.title}{"  Body :"} { data.body}</li>
+        ))}
+        </div>
+    </>)
 }
 export default Post ;

@@ -1,5 +1,5 @@
 #root {
-  /* max-width: 1280px; */
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -31,4 +31,34 @@
 }
 .active{
   color: orange;
+}
+.UserList{
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  align-items: start;
+  margin-left: 50vh;
+  
+
+  
+}
+.TodoList{
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  align-items: start;
+  margin-left: 40vh;
+  
+
+  
+}
+.PostList{
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  align-items: start;
+  
+  
+
+  
 }

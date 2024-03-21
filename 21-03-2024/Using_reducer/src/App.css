@@ -1,0 +1,96 @@
+/* 
+
+.inBox{
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.input{
+
+  outline: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  
+} */
+
+.mainDiv {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  height: auto;
+}
+
+.inBox {
+  width: 400px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the box */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Shadow effect */
+}
+
+.input {
+  margin-top: 5px;
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding for input fields */
+  margin-bottom: 20px; /* Spacing between input fields */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for input fields */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  color: #fff; /* Text color */
+}
+
+.button {
+  width: 100%; /* Full width for submit button */
+  padding: 10px; /* Padding for submit button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for submit button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer; /* Cursor style on hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.main {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  
+}
+
+/* Styles for the form container */
+
+
+/* Styles for input fields */
+.input {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding for input fields */
+  margin-bottom: 20px; /* Spacing between input fields */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for input fields */
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #fff; /* Text color */
+}
+
+/* Styles for the submit button */
+.button2 {
+  width: 100%; /* Full width for submit button */
+  padding: 10px; /* Padding for submit button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for submit button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer; /* Cursor style on hover */
+}
+
+/* Hover effect for the submit button */
+.button2:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
